@@ -74,7 +74,7 @@ elif selected=='Yoga Pose Grading':
     ['Tada Asana','Vriksha Asana','Trikona Asana','Shava Asana','SetuBandh Asana','Padahast Asana','Bhujanga Asana','Dhanur Asana'],)
 
     detection_mode = st.sidebar.selectbox('Grade through ',
-        ['Image','Take Picture','Real Time Webcam'])
+        ['Image'])
 
 
     if app_mode =='Tada Asana':
@@ -89,13 +89,6 @@ elif selected=='Yoga Pose Grading':
 
             
 
-        if detection_mode == "Real Time Webcam":
-            tadaVideo()  #function in TadaAsana.py
-
-        if detection_mode == "Take Picture":
-
-            tadaPicture()
-
     
     elif app_mode =='Vriksha Asana':
 
@@ -107,14 +100,6 @@ elif selected=='Yoga Pose Grading':
         if detection_mode == "Image":
             treeAsanaImage()  #function in TadaAsana.py
 
-            
-
-        if detection_mode == "Real Time Webcam":
-            treeVideo()  #function in TadaAsana.py
-
-        if detection_mode == "Take Picture":
-
-            treePicture()
 
     elif app_mode =='Trikona Asana':
 
@@ -125,15 +110,6 @@ elif selected=='Yoga Pose Grading':
 
         if detection_mode == "Image":
             trikonaAsanaImage()  #function in TadaAsana.py
-
-            
-
-        if detection_mode == "Real Time Webcam":
-            trikonaVideo()  #function in TadaAsana.py
-
-        if detection_mode == "Take Picture":
-
-            trikonaPicture()
 
 
     elif app_mode =='Shava Asana':
@@ -146,14 +122,6 @@ elif selected=='Yoga Pose Grading':
         if detection_mode == "Image":
             shavaAsanaImage()  #function in TadaAsana.py
 
-            
-
-        if detection_mode == "Real Time Webcam":
-            shavaVideo()  #function in TadaAsana.py
-
-        if detection_mode == "Take Picture":
-
-            shavaPicture()
 
     elif app_mode =='SetuBandh Asana':
 
@@ -165,15 +133,7 @@ elif selected=='Yoga Pose Grading':
         if detection_mode == "Image":
             SetuBandhAsanaImage()  #function in TadaAsana.py
 
-            
 
-        if detection_mode == "Real Time Webcam":
-            SetuBandhAsanaVideo()  #function in TadaAsana.py
-
-        if detection_mode == "Take Picture":
-
-            SetuBandhAsanaPicture()
-        
 
     elif app_mode =='Padahast Asana':
 
@@ -185,14 +145,6 @@ elif selected=='Yoga Pose Grading':
         if detection_mode == "Image":
             PadahastAsanaImage()  #function in TadaAsana.py
 
-            
-
-        if detection_mode == "Real Time Webcam":
-            PadahastAsanaVideo()  #function in TadaAsana.py
-
-        if detection_mode == "Take Picture":
-
-            PadahastAsanaPicture()
 
 
     elif app_mode =='Bhujanga Asana':
@@ -205,14 +157,6 @@ elif selected=='Yoga Pose Grading':
         if detection_mode == "Image":
             BhujangAsanaImage()  #function in TadaAsana.py
 
-            
-
-        if detection_mode == "Real Time Webcam":
-            BhujangAsanaVideo()  #function in TadaAsana.py
-
-        if detection_mode == "Take Picture":
-
-            BhujangAsanaPicture()
 
     else:
 
@@ -223,14 +167,7 @@ elif selected=='Yoga Pose Grading':
         if detection_mode == "Image":
             ArdhChakrAsanaImage()  #function in TadaAsana.py
 
-            
 
-        if detection_mode == "Real Time Webcam":
-            ArdhChakrAsanaVideo()  #function in TadaAsana.py
-
-        if detection_mode == "Take Picture":
-
-            ArdhChakrAsanaPicture()
 
 
 
