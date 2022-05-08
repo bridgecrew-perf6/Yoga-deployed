@@ -55,7 +55,7 @@ def image_resize(image, width=None, height=None, inter=cv2.INTER_AREA):
 with st.sidebar:
     selected = option_menu(
         menu_title="Free Your Chakras",
-        options=["Home","Yoga Pose Grading","Meet the team"],
+        options=["Home","Yoga Pose Grading"],
         icons=["house","bar-chart","person"],
         menu_icon='cast'
 
@@ -168,36 +168,6 @@ elif selected=='Yoga Pose Grading':
             ArdhChakrAsanaImage()  #function in TadaAsana.py
             
             
-            
-else:
-        import os
-        st.sidebar.write(" ------ ")
-        st.subheader("We are NUtons !!")
-        first_column, second_column, third_column, forth_column,  = st.columns(4)
-        first_column.image(os.path.join('meet_team/shubh.jpeg'),    use_column_width = True, caption = "Shubh Sehgal ")
-        second_column.image(os.path.join('meet_team/manu.jpeg'),    use_column_width = True, caption = "Manu Gupta")
-        third_column.image(os.path.join('meet_team/WhatsApp Image 2022-04-22 at 3.57.55 PM.jpeg'),  use_column_width = True, caption = "Piyush Kalyani")
-        forth_column.image(os.path.join('meet_team/ayush.jpg'),  use_column_width = True, caption = "Aayush Pandey")
-      
-      
-       
-      
-    
-
-        st.sidebar.write('Please feel free to connect with us')
-        st.sidebar.success('Hope you had a great time :)')
-
-        expandar_linkedin = st.expander('Contact Information')
-        expandar_linkedin.write('Shubh: shubh.sehgal2506@gmail.com')
-        expandar_linkedin.write('Manu: manu.gupta19@st.niituniversity.in')
-        expandar_linkedin.write('Piyush: piyush.kalyani19@st.niituniversity.in')
-        expandar_linkedin.write('Aayush: aayush.pandey19@st.niituniversity.in')
-       
-
-        expander_faq = st.expander("More About Our Project")
-        expander_faq.write("Hi there! If you have any questions about our project, or simply want to check out the source code, please visit our github repo: https://github.com/Shubhmeep/The-Yoga-Guru.git")
-
-
 
 
 
