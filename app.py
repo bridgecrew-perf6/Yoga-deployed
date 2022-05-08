@@ -168,7 +168,8 @@ elif selected=='Yoga Pose Grading':
             ArdhChakrAsanaImage()  #function in TadaAsana.py
             
             
-   else:
+            
+else:
         import os
         st.sidebar.write(" ------ ")
         st.subheader("We are NUtons !!")
